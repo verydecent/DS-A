@@ -18,3 +18,13 @@ function stringReversal2(str) {
 
 console.log(stringReversal2("wonjae"));
 console.log(stringReversal2("minji"));
+
+function stringReversal3(str) {
+  let reversed = "";
+  for (let char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
+}
+
+console.log(stringReversal3("South Korea"));
