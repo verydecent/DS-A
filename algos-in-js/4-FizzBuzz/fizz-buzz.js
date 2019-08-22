@@ -23,4 +23,21 @@ for (let i = 0; i < 30; i++) {
   arr1[i] = i;
 }
 
-fizzBuzz(arr1);
+const fizzBuzz2 = (arr) => {
+  for (let num of arr) {
+    if (num % 2 == 0) {
+      console.log(`Fizz ${num}`);
+    }
+    else if (num % 3 == 0) {
+      console.log(`Buzz ${num}`);
+    }
+    else if (num % 2 == 0 && num % 3 == 0) {
+      console.log(`Fizz! Buzz! ${num}`);
+    }
+    else {
+      console.log("NA");
+    }
+  }
+}
+
+fizzBuzz2(arr1); 
